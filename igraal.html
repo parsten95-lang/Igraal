@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>iGraal Display</title>
+  <style>
+    html,body{height:100%;margin:0;background:#000;}
+    .wrap{display:flex;align-items:center;justify-content:center;height:100%;}
+    #scale{transform:scale(3.8);transform-origin:center;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="scale">
+      <!-- iGraal Modul -->
+      <div style="width: 300px; height: 250px; overflow: hidden;">
+        <div id="ig-bb1d732b577e9588"><noscript>Bitte JavaScript aktivieren.</noscript></div>
+      </div>
+      <script type="text/javascript">
+        var IGSponso_bb1d732b577e9588 = {
+          igGodfather:'AG_56aba3021d5f6',
+          init:function(){
+            var self=this;
+            self.igJsHost='https:'; // erzwinge HTTPS
+            self.igFormat='img'; self.igLinks='383'; self.igBn='37';
+            self.igSize='8c-6y'; self.igDivId='ig-bb1d732b577e9588'; self.igCatId='root';
+            self.igUid='bb1d732b577e9588'; self.igDomain=location.hostname; self.igRand=Math.round(Math.random()*10000);
+            self.igUrl = self.igJsHost + '//de.igraal.com/einladung/js/ig.js'
+              + '?f=' + self.igFormat + '&l=' + self.igLinks + '&g=' + self.igGodfather + '&b=' + self.igBn
+              + '&s=' + self.igSize + '&d=' + self.igDivId + '&c=' + self.igCatId + '&i=' + self.igUid
+              + '&h=' + self.igDomain + '&r=' + self.igRand;
+            self.igElem = document.createElement('script');
+            self.igElem.type='text/javascript';
+            self.igElem.src=self.igUrl;
+            var old = window.onload;
+            window.onload=function(){ if(old) old(); document.body.appendChild(self.igElem); };
+          },
+          igJsHost:'https:', igUrl:'', igElem:null
+        };
+        IGSponso_bb1d732b577e9588.init();
+        setTimeout(()=>location.reload(), 3*60*60*1000);
+      </script>
+      <!-- Ende iGraal Modul -->
+    </div>
+  </div>
+</body>
+</html>
